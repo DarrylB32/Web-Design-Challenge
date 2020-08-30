@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+   
+
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage HTML</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+    
+    <ul class="nav nav-pills" style= "height:70px; background: #007bff00;"  > <!--Navigation Bar Materials -->
+        <li class="nav-item" style= "font-size:30px" >    <!--Pill Item-->
+          <a class="nav-link active" href="file:///C:/Users/dbayn/Documents/GT%20Bootcamp/Homework/Web-Design-Challenge/webpage.html#">Latitude</a>
+        </li>
+
+        <li class="nav-item dropdown" style="font-size:25px" >    <!--Dropdown Menu Item-->
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Max Temperature</a>
+            <a class="dropdown-item" href="#">Humidity</a>
+            <a class="dropdown-item" href="#">Cloudiness</a>
+            <a class="dropdown-item" href="#">Cloudiness</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+
+        <li class="nav-item" style="font-size:25px">   <!--Navigation Bar Item-->
+          <a class="nav-link" href="#">Comparison</a>
+        </li>
+
+        <li class="nav-item" style="font-size:25px">   <!--Navigation Bar Item-->
+            <a class="nav-link" href="#">Data</a>
+        </li>
+    </ul>
+
+    <div class="container"> <!--Initialize Container-->
+
+        <div class="row">   <!--Row 1 Materials-->
+            <div class="col-sm-8" >
+                <p>
+                    <h4 style="color:#007bff">
+                    Summary: Latitude vs. X
+                    </h4>
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>
+                            <img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="latitude vs Max Temp">
+                        </p>
+                    </div>
+                
+                    <div class="col-sm-8">
+                        <p>
+                            The purpose of this project was 
+                            to analyze how weather changes 
+                            as you get closer to the equator.
+                            To accomplish this analysis, we 
+                            first pulled data from the 
+                            OpenWeatherMapAPI to assemble
+                            a dataset of 500 cities. 
+                        </p>
+
+                        <p>
+                        After assembling the dataset
+                        we used Matplotlib to plot 
+                        various aspects of the weather 
+                        vs. latitude. Factors we looked 
+                        at included: temperature, 
+                        cloudiness, wind speed, and humidity. 
+                        This site provides the source data 
+                        and visualizations created as 
+                        part of the analysis, as well as 
+                        explanations and descriptions of 
+                        any trends or correlations witnessed. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            
+            <div class="col-sm-4">
+                     
+                <p>
+                    <h4 style="color:#007bff">
+                    Visualizations
+                    </h4>
+                </p>
+                
+                <div class="row">
+                    <div class="col-sm-6" 
+                        <div class="card" class="img-fluid">    <!--IMAGE: Latitude vs Max Temp-->
+                            <img src="Resources/assets/images/Fig1.png" class="card-img-top" alt="Latitude vs Max Temp">
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6">   <!--IMAGE: Latitude vs Humidity-->
+                        <div class="card" class="img-fluid"> 
+                            <img src="Resources/assets/images/Fig2.png" class="card-img-top" alt="Latitude vs Humidity">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6" 
+                            <div class="card" class="img-fluid">    <!--IMAGE: Latitude vs Max Temp-->
+                                <img src="Resources/assets/images/Fig3.png" class="card-img-top" alt="Latitude vs Cloudiness">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">   <!--IMAGE: Latitude vs Humidity-->
+                            <div class="card" class="img-fluid"> 
+                                <img src="Resources/assets/images/Fig4.png" class="card-img-top" alt="Latitude vs Wind Speed">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    
+    </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
