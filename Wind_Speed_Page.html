@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <!--Style Sheet & Head Information-->
+    <meta charset="UTF-8" />
+    <title>Wind Speed</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Body Materials-->
+    <div class="container-fluid">
+      <!--Initialize Navbar Container-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a
+          class="navbar-brand"
+          href="file:///C:/Users/dbayn/Documents/GT%20Bootcamp/Homework/Web-Design-Challenge/Landing_Page.html#"
+          >Latitude</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          target="_self"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <div class="dropdown active">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="dropdownMenu1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <a class="dropdown-item" href="Max_Temp_Page.html"
+                    >Max Temp</a
+                  >
+                  <a class="dropdown-item" href="Humidity_Page.html"
+                    >Humidity</a
+                  >
+                  <a class="dropdown-item" href="Cloudiness_Page.html"
+                    >Cloudiness</a
+                  >
+                  <a class="dropdown-item" href="Wind_Speed_Page.html"
+                    >Wind Speed</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Comparisons_Page.html">Comparison</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <!--Initiialize Body Container-->
+      <div class="row" style="padding-top: 20px">
+        <!--Row 1 Materials-->
+        <div class="col-sm-8">
+          <h4 style="color: #007bff">Wind Speed</h4>
+          <p>
+            <img
+              class="w-100 float-left"
+              src="Resources/assets/images/Fig4.png"
+              alt="latitude vs Max Temp"
+              class="float-left"
+            />
+          </p>
+
+          <div class="row">
+            <!--SUB Row 1 Materials-->
+            <div class="col-sm-12">
+              <p class="text-justify">
+                As expected, the weather becomes significantly warmer as one
+                approaches the equator (0 Deg. Latitude). More interestingly,
+                however, is the fact that the southern hemisphere tends to be
+                warmer this time of year than the northern hemisphere. This may
+                be due to the tilt of the Earth at the year this data was
+                gathered.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <h4 style="color: #007bff">Visualizations</h4>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="Max_Temp_Page.html">
+                <img
+                  class="w-100"
+                  src="/Homework/Web-Design-Challenge/Resources/assets/images/Fig1.png"
+                  atl="Latitude vs Max Temperature"
+                />
+              </a>
+            </div>
+
+            <div class="col-sm-6">
+              <a href="Humidity_Page.html">
+                <img
+                  class="w-100"
+                  src="/Homework/Web-Design-Challenge/Resources/assets/images/Fig2.png"
+                  atl="Latitude vs Humidity"
+                />
+              </a>
+            </div>
+
+            <div class="col-sm-6">
+              <a href="Cloudiness_Page.html">
+                <img
+                  class="w-100"
+                  src="/Homework/Web-Design-Challenge/Resources/assets/images/Fig3.png"
+                  atl="Latitude vs Cloudiness"
+                />
+              </a>
+            </div>
+
+            <div class="col-sm-6">
+              <a href="Wind_Speed_Page.html">
+                <img
+                  class="w-100"
+                  src="/Homework/Web-Design-Challenge/Resources/assets/images/Fig4.png"
+                  atl="Latitude vs Wind Speed"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
