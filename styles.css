@@ -1,5 +1,9 @@
-@media (max-width: 576px){
-    .container-fluid {
-        background: #007bff;
+.navbar-brand {
+    background: #007bff !important;
+}
+
+@media (max-width:991px) {   
+    .navbar {
+        background: #007bff !important;
     }
 }
